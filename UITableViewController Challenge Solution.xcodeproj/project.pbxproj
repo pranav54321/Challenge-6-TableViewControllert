@@ -14,13 +14,13 @@
 		A1B1741B195A9A87002F25FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B1741A195A9A87002F25FF /* main.m */; };
 		A1B1741F195A9A87002F25FF /* PRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B1741E195A9A87002F25FF /* PRAppDelegate.m */; };
 		A1B17422195A9A87002F25FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B17420195A9A87002F25FF /* Main.storyboard */; };
-		A1B17425195A9A87002F25FF /* PRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B17424195A9A87002F25FF /* PRViewController.m */; };
 		A1B17427195A9A87002F25FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B17426195A9A87002F25FF /* Images.xcassets */; };
 		A1B1742E195A9A88002F25FF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B1742D195A9A88002F25FF /* XCTest.framework */; };
 		A1B1742F195A9A88002F25FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B1740E195A9A87002F25FF /* Foundation.framework */; };
 		A1B17430195A9A88002F25FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B17412195A9A87002F25FF /* UIKit.framework */; };
 		A1B17438195A9A88002F25FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1B17436195A9A88002F25FF /* InfoPlist.strings */; };
 		A1B1743A195A9A88002F25FF /* UITableViewController_Challenge_SolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B17439195A9A88002F25FF /* UITableViewController_Challenge_SolutionTests.m */; };
+		A1B17445195A9AD1002F25FF /* PRTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B17444195A9AD1002F25FF /* PRTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +45,14 @@
 		A1B1741D195A9A87002F25FF /* PRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRAppDelegate.h; sourceTree = "<group>"; };
 		A1B1741E195A9A87002F25FF /* PRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRAppDelegate.m; sourceTree = "<group>"; };
 		A1B17421195A9A87002F25FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A1B17423195A9A87002F25FF /* PRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRViewController.h; sourceTree = "<group>"; };
-		A1B17424195A9A87002F25FF /* PRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRViewController.m; sourceTree = "<group>"; };
 		A1B17426195A9A87002F25FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A1B1742C195A9A88002F25FF /* UITableViewController Challenge SolutionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UITableViewController Challenge SolutionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B1742D195A9A88002F25FF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A1B17435195A9A88002F25FF /* UITableViewController Challenge SolutionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UITableViewController Challenge SolutionTests-Info.plist"; sourceTree = "<group>"; };
 		A1B17437195A9A88002F25FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A1B17439195A9A88002F25FF /* UITableViewController_Challenge_SolutionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewController_Challenge_SolutionTests.m; sourceTree = "<group>"; };
+		A1B17443195A9AD1002F25FF /* PRTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRTableViewController.h; sourceTree = "<group>"; };
+		A1B17444195A9AD1002F25FF /* PRTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +115,8 @@
 				A1B1741D195A9A87002F25FF /* PRAppDelegate.h */,
 				A1B1741E195A9A87002F25FF /* PRAppDelegate.m */,
 				A1B17420195A9A87002F25FF /* Main.storyboard */,
-				A1B17423195A9A87002F25FF /* PRViewController.h */,
-				A1B17424195A9A87002F25FF /* PRViewController.m */,
+				A1B17443195A9AD1002F25FF /* PRTableViewController.h */,
+				A1B17444195A9AD1002F25FF /* PRTableViewController.m */,
 				A1B17426195A9A87002F25FF /* Images.xcassets */,
 				A1B17415195A9A87002F25FF /* Supporting Files */,
 			);
@@ -251,7 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1B1741F195A9A87002F25FF /* PRAppDelegate.m in Sources */,
-				A1B17425195A9A87002F25FF /* PRViewController.m in Sources */,
+				A1B17445195A9AD1002F25FF /* PRTableViewController.m in Sources */,
 				A1B1741B195A9A87002F25FF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

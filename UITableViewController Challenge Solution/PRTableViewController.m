@@ -46,26 +46,49 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    if(section == 0)
+        return 2;
+    else if (section == 1)
+        return 1;
+    else
+        return 3;
+    
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString *cellIdentifier= @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    
+    if(indexPath.section == 0)
+    {
+        cell.textLabel.text = [NSString stringWithFormat:@"I am in Section 0"];
+        cell.backgroundColor = [UIColor redColor];
+    }
+    if(indexPath.section == 1)
+    {
+        cell.textLabel.text =[NSString stringWithFormat:@"another Section"];
+        cell.backgroundColor = [UIColor blueColor];
+
+    }
+    if(indexPath.section == 2)
+    {
+        cell.textLabel.text = [NSString stringWithFormat:@"Cell %i",indexPath.row];
+        cell.backgroundColor = [UIColor yellowColor];
+
+    }
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -85,7 +108,7 @@
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    }
 }
 */
 
