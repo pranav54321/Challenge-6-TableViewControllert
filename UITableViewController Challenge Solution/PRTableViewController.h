@@ -1,5 +1,5 @@
 //
-//  PRViewController.h
+//  PRTableViewController.h
 //  UITableViewController Challenge Solution
 //
 //  Created by Pranav Ranawat on 25/06/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PRViewController : UIViewController
+@interface PRTableViewController : UITableViewController
 
 @end
